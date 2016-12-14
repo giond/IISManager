@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IISManager.Exceptions
+namespace IISManager.Core.Exceptions
 {
     public class BusinessException : Exception
     {

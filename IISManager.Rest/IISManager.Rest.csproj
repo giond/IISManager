@@ -133,14 +133,11 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
     <Compile Include="Controllers\SiteController.cs" />
-    <Compile Include="Exceptions\BusinessExceptions.cs" />
     <Compile Include="Filters\ExceptionHandlingAttribute.cs" />
     <Compile Include="Filters\TokenAuthorizationAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Managers\AspManager.cs" />
-    <Compile Include="Managers\ConfigurationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\DiscountAspServiceClient\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -166,6 +163,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\DiscountAspServiceClient\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IISManager.Core\IISManager.Core.csproj">
+      <Project>{0bc6f7b7-e3e9-4226-939b-ed353a3744ed}</Project>
+      <Name>IISManager.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

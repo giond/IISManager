@@ -1,4 +1,4 @@
-﻿namespace IISManager.Managers
+﻿namespace IISManager.Core.Managers
 {
     public class ConfigurationManager
     {

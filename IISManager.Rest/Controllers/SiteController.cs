@@ -1,33 +1,33 @@
 ﻿using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using IISManager.Managers;
 using System.Threading.Tasks;
+using IISManager.Core.Managers;
 
 namespace IISManager.Controllers
 {
     public class SiteController : ControllerBase
     {
         [HttpPost]
-        public HttpResponseMessage Recycle()
+        public async Task<HttpResponseMessage> Recycle()
         {
-            AspManager.Recycle();
+            await AspManager.Recycle();
 
             return Request.CreateResponse(HttpStatusCode.OK, new { result = "Success", message = "IIS pool successfully recycled"});
         }
 
         [HttpPost]
-        public HttpResponseMessage Stop()
+        public async Task<HttpResponseMessage> Stop()
         {
-            AspManager.Stop();
+            await AspManager.Stop();
 
             return Request.CreateResponse(HttpStatusCode.OK, new { result = "Success", message = "IIS site successfully stoped" });
         }
 
         [HttpPost]
-        public HttpResponseMessage Start()
+        public async Task<HttpResponseMessage> Start()
         {
-            AspManager.Start();
+            await AspManager.Start();
 
             return Request.CreateResponse(HttpStatusCode.OK, new { result = "Success", message = "IIS site successfully started" });
         }
