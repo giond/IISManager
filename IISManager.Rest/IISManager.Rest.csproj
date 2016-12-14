@@ -89,45 +89,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
-    <None Include="Service References\DiscountAspServiceClient\customerapi.disco" />
-    <None Include="Service References\DiscountAspServiceClient\configuration91.svcinfo" />
-    <None Include="Service References\DiscountAspServiceClient\configuration.svcinfo" />
-    <Content Include="Service References\DiscountAspServiceClient\IISManager.DiscountAspServiceClient.DbUsageResult.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\DiscountAspServiceClient\IISManager.DiscountAspServiceClient.DiskQuotaGetUsagesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\DiscountAspServiceClient\IISManager.DiscountAspServiceClient.DnsARecord.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\DiscountAspServiceClient\IISManager.DiscountAspServiceClient.DnsCnameRecord.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\DiscountAspServiceClient\IISManager.DiscountAspServiceClient.DnsMxRecord.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\DiscountAspServiceClient\IISManager.DiscountAspServiceClient.DnsTxtRecord.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\DiscountAspServiceClient\IISManager.DiscountAspServiceClient.JobStatus.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\DiscountAspServiceClient\IISManager.DiscountAspServiceClient.SMAlias.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\DiscountAspServiceClient\IISManager.DiscountAspServiceClient.SMUser.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\DiscountAspServiceClient\IISManager.DiscountAspServiceClient.UserUsage.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Service References\DiscountAspServiceClient\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <Content Include="Web.config" />
-    <None Include="Service References\DiscountAspServiceClient\customerapi.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -139,11 +101,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\DiscountAspServiceClient\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -157,12 +114,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\DiscountAspServiceClient\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IISManager.Core\IISManager.Core.csproj">
