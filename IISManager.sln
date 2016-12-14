@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IISManager.Rest", "IISManager\IISManager.Rest.csproj", "{2914CDB5-AC11-465C-8626-9D37233DE572}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IISManager.Rest", "IISManager.Rest\IISManager.Rest.csproj", "{2914CDB5-AC11-465C-8626-9D37233DE572}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IISManager.Forms", "IISManager.Forms\IISManager.Forms.csproj", "{07552941-1408-45BE-949A-F5ECE75947A6}"
 EndProject
